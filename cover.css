@@ -29,8 +29,12 @@ body {
   padding-top: 1%;
 }
 
+.projects-content-information {
+  padding-bottom: 2%;
+}
+
 .content-information {
-  padding-top: 3%;
+  padding-top: 10%;
   padding-bottom: 2%;
 }
 
