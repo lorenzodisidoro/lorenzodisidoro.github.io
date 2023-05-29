@@ -1,9 +1,34 @@
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    Hi, soon there will be something here!
-  </body>
-</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+  <style>
+    .center-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <pre id="content" class="center-screen"></pre>
+
+  <script>
+    var data = { 
+      name: "Lorenzo", 
+      surname: "D'Isidoro",
+      whoami: "I'm a Software Engineer with a passion for AI, algorithms and clean code. In my spare time, I play Powerlifting, read books or listen music. Slow thinker.",
+      accounts: [
+        { key: "email", value: "lorenzo.disidoro@gmail.com"},
+        { key: "github", value: "https://github.com/lorenzodisidoro"},
+        { key: "twitter", value: "https://twitter.com/coldlore1"},
+        { key: "linkedin", value: "https://www.linkedin.com/in/lorenzo-d-isidoro-0b2818a9/"}
+      ]
+    };
+
+    document.getElementById("content").innerHTML = JSON.stringify(data, null, 4);
+  </script>
+
+</body>
+
+</html
