@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
   <style>
     .center-screen {
-      display: flex;
+        display:inline;
       align-items: center;
     }
   </style>
@@ -12,21 +11,20 @@
   <pre id="content" class="center-screen"></pre>
 
   <script>
-    var data = { 
+    var contentJSON = { 
       name: "Lorenzo", 
       surname: "D'Isidoro",
       whoami: "I'm a Software Engineer with a passion for AI, algorithms and clean code. In my spare time, I play Powerlifting, read books or listen music. Slow thinker.",
       accounts: [
-        { key: "email", value: "<a href='lorenzo.disidoro@gmail.com'>lorenzo.disidoro@gmail.com</a>"},
+        { key: "email", value: "<a href='mailto:lorenzo.disidoro@gmail.com'>lorenzo.disidoro@gmail.com</a>"},
         { key: "github", value: "<a href='https://github.com/lorenzodisidoro'>github.com/lorenzodisidoro</a>"},
         { key: "twitter", value: "<a href='https://twitter.com/lorenzodisidoro'>twitter.com/lorenzodisidoro</a>"},
         { key: "linkedin", value: "<a href='https://www.linkedin.com/in/lorenzo-d-isidoro-0b2818a9/'>linkedin.com/in/lorenzo-d-isidoro</a>"}
       ]
     };
 
-    document.getElementById("content").innerHTML = JSON.stringify(data, null, 4);
+    document.getElementById("content").innerHTML = JSON.stringify(contentJSON, null, 2);
   </script>
 
 </body>
-
-</html
+</html>
